@@ -1,0 +1,103 @@
+*{
+    margin: 0;padding: 0;
+}
+ul{
+    list-style: none;
+}
+.navagation{
+    position: relative;overflow: hidden;
+}
+.navagation .imgBox{
+    position: relative;
+}
+.navagation .imgBox img{
+    width: 100%;display: block;position: absolute;opacity: 0;transition: 0.4s;left: -20%;
+}
+.navagation .imgBox .imgAdd{
+    left: 0;opacity: 1;
+}
+.navagation .fuGai{
+    width: 100%;height: 100%;position: absolute;background-image: linear-gradient(to right, rgba(30,33,50,0.5) ,rgba(255,255,255,0) 40%);
+}
+.navagation .huanNav{
+    position: absolute;width: 46%;transform: rotate(5deg);left: -24%;transition: 0.4s;
+}
+.navagation .huanNav li{
+    position: relative;display: flex;align-items: center;
+}
+.navagation .huanNav .hnBox{
+    width:210px;height: 210px;border-radius: 50%;transition: 0s;
+    position: absolute;cursor: pointer;box-shadow: 0 0 3px rgba(59, 59, 59,0.4);
+    background-position: center center;background-size: 350px;background-repeat: no-repeat;
+}
+.navagation .huanNav .addBox{
+    display: none;
+}
+.navagation .huanNav h1{
+    font-family: monospace;display: none;position: absolute;text-align: center;color: white;
+    font-size: 120px;font-weight: 1000;text-shadow: 0 0px 3px rgba(59, 59, 59,0.4) ;
+}
+.navagation .huanNav li .addText{
+    display: block;
+}
+.navagation .huanNav li:first-of-type .hnBox{
+    background-image: url('../images/img-1.jpeg');
+}
+.navagation .huanNav li:nth-of-type(2) .hnBox{
+    background-image: url('../images/img-2.jpeg');
+}
+.navagation .huanNav li:nth-of-type(3) .hnBox{
+    background-image: url('../images/img-3.jpeg');
+}
+.navagation .huanNav li:nth-of-type(4) .hnBox{
+    background-image: url('../images/img-4.jpeg');
+}
+.navagation .huanNav li:nth-of-type(5) .hnBox{
+    background-image: url('../images/img-5.jpeg');
+}
+.navagation .huanNav li:nth-of-type(6) .hnBox{
+    background-image: url('../images/img-6.jpeg');
+}
+.navagation .huanNav li:nth-of-type(7) .hnBox{
+    background-image: url('../images/img-7.jpeg');
+}
+.navagation .huanNav li:nth-of-type(8) .hnBox{
+    background-image: url('../images/img-8.jpeg');
+}
+.navagation .huanNav li:last-of-type .hnBox{
+    background-image: url('../images/img-9.jpeg');
+}
+
+
+@media screen and (max-width : 768px){
+    .navagation .huanNav .hnBox{
+        width:62px;height: 62px;background-size: 100px;
+    }
+    .navagation .huanNav h1{
+        font-size: 30px;font-weight: 800;
+    }
+}
+@media screen and (min-width : 768px) and (max-width : 992px){
+    .navagation .huanNav .hnBox{
+        width:132px;height: 132px;background-size: 200px;
+    }
+    .navagation .huanNav h1{
+        font-size: 60px;font-weight: 800;
+    }
+}
+@media screen and (min-width : 992px) and (max-width : 1200px){
+    .navagation .huanNav .hnBox{
+        width:170px;height: 170px;background-size: 300px;
+    }
+    .navagation .huanNav h1{
+        font-size: 90px;font-weight: 800;
+    }
+}
+/* @media screen and (min-width : 1200px){
+    .navagation .huanNav .hnBox{
+        width:170px;height: 170px;background-size: 300px;
+    }
+    .navagation .huanNav h1{
+        font-size: 90px;font-weight: 800;
+    }
+} */
